@@ -42,17 +42,16 @@ as a proxy for low-resource domains such as medical imaging.
 ## Method
 
 - **Generator:** Conditional WGAN-GP (C-WGAN-GP), 500 epochs
-- **Quality filter:** Score 400 candidates/class with the trained critic, 
-  retain top 25%
+- **Quality filter (tested, not adopted):** one 800/class pool scored once by the trained critic; filtered = strict top-*k* by score (the top ~3–25% of the pool, depending on count and ratio), unfiltered = a random draw from the *same* pool
 - **Classifier:** 3-block CNN, 5 independent random seeds
 - **Statistical test:** Paired t-test, α = 0.05
 
 ## Practical Recipe
 
-> Train the pair, keep the critic, score the candidates, train on the best.
+> Diagnose the regime; if you're starved, augment — and keep it simple.
 
 ## Links
 
-- [Research Paper (PDF)](/assets/papers/Catanzarite_ResearchProject_FinalPaper_v12.pdf)
-- [Jupyter Notebook](/assets/notebooks/Catanzarite_ResearchProject_rev9_FINAL.html)
+- [Research Paper (PDF)](/assets/papers/Catanzarite_ResearchProject_FinalPaper_v13.pdf)
+- [Jupyter Notebook](/assets/notebooks/Catanzarite_ResearchProject_rev12_FINAL.html)
 - **Course:** EN.705.603 Introduction to Generative AI, JHU Spring 2026
