@@ -7,7 +7,7 @@ author_profile: true
 
 AI researcher dedicated to human-centered AI and world-improving projects — and a scientist and educator who came to machine learning the long way, through astrophysics, space science, and the classroom.
 
-I'm currently completing a Master of Science in Artificial Intelligence at Johns Hopkins University's Whiting School of Engineering, where my coursework spans large language models (LLMs), generative AI, and modern software engineering. My current research investigates critic-filtered synthetic data augmentation: using a Wasserstein GAN with gradient penalty (WGAN-GP) critic to selectively filter generated images before training, converting harmful augmentation into strongly beneficial augmentation under data scarcity (+8.4 percentage points, p=0.0005).
+I'm currently pursuing a Master of Science in Artificial Intelligence at Johns Hopkins University's Whiting School of Engineering, where my coursework spans large language models (LLMs), generative AI, and modern software engineering. My current research investigates generative data augmentation for low-resource image classification. In a controlled factorial study on Chinese-MNIST, I found that whether augmentation helped depended on how scarce the real data was — and not, as I'd hypothesized, on filtering the synthetic samples by a GAN critic's quality scores. With the real training set reduced to 25 images per class, GAN augmentation recovered up to about 43% of the accuracy lost relative to 50 images per class (+7 percentage points, p < 0.01); critic filtering added no statistically detectable gain.
 
 ## Background
 
