@@ -42,6 +42,15 @@ author:
   name: "Joseph Catanzarite"
   bio: "AI/ML researcher. Johns Hopkins Whiting School of Engineering."
   github: "jcatanza"
+  linkedin: "jcat"
+  email: "jcat@alumni.caltech.edu"
+  links:
+    - label: "Medium"
+      icon: "fab fa-fw fa-medium"
+      url: "https://medium.com/@jcatanz"
+    - label: "Google Scholar"
+      icon: "fas fa-fw fa-graduation-cap"
+      url: "https://scholar.google.com/citations?user=Glueh8AAAAAJ"
 
 # Defaults
 defaults:
