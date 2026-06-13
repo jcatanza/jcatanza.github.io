@@ -5,10 +5,10 @@ date: 2026-06-12
 categories: [generative-ai, research]
 tags: [WGAN, data-augmentation, CNN, Chinese-MNIST]
 author_profile: true
-excerpt: "A C-WGAN-GP study showing that critic-filtered synthetic augmentation 
-significantly improves CNN classification accuracy under data scarcity, 
-while unfiltered augmentation degrades it."
+excerpt: "Filtering a generative model's synthetic images by quality — using the model's own critic — turns sparse-data augmentation from a liability into a statistically significant accuracy gain for an image classifier."
 ---
+
+Can synthetic images stand in for sparse real training data? This project shows the answer hinges on quality control. Training an image classifier on just 25 real examples per class, I augmented the data with images from a GAN (generative adversarial network) — but first scored each synthetic image with the GAN's own critic, the network it had already trained to tell real from fake, and kept only the cleanest. Filtered this way, the synthetic data delivered a statistically significant accuracy gain of 8.4 percentage points (p = 0.0005), and the gain grew significantly as more filtered samples were added (+2.9 points going from 1:1 to 4:1 augmentation, p = 0.003). The same generator's *unfiltered* output, by contrast, degraded accuracy. The lesson is unambiguous: for synthetic augmentation, quality — not quantity — decides the outcome, and a generator's own discriminator is a free and effective quality filter.
 
 ## Overview
 
